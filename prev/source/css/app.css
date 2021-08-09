@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   /* jQuery's offset() is confused when the position is set to relative (by
@@ -692,13 +692,15 @@ body {
 }
 #header {
   position: relative;
-  font-size: 12px;
-  font-family: "Droid Sans", Arial, Helvetica, sans-serif;
-  color: #202020;
-  border-top: 2px solid #0bacb6;
-  border-bottom: 7px solid #17b4e3;
+  background-color: #202020;
+  font-size: .8em;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  color: #E8F2FC;
+  border-top: 2px solid #458AC5;
+  border-bottom: 7px solid #4cae4c;
   line-height: normal;
   padding-bottom: 22px;
+  height: 70px;
 }
 #logo {
   position: relative;
@@ -711,8 +713,9 @@ body {
   float: left;
   margin-right: 10px;
   margin-left: 20px;
-  border-right: 1px solid #0bacb6;
+  /* border-right: 1px solid #5cb85c; */
   padding-right: 0.75em;
+  max-height: 50px;
 }
 #logo,
 #log img {
@@ -883,7 +886,7 @@ a:hover {
 
 /* Styles for the footer */
 #fine-print {
-  border-top: 2px solid #0bacb6;
+  border-top: 2px solid #458AC5;
   clear: left;
   text-align: center;
   font-size: 12px;
