@@ -252,7 +252,7 @@ export class ObservationTable extends ResourceTable {
     let result = v ? `${v.value} ${v.unit}` : '';
     (obs.component || []).forEach((component) => {
       obs.code.text || obs.code.coding[0].display;
-      const componentCodeDisplay = this.getDisplayOfCodeableConcept(
+      const componentCodeDisplay = component.code + ' | ' + this.getDisplayOfCodeableConcept(
         component.code
       );
       const componentValue = this._getValue(component);
