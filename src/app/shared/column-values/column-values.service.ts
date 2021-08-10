@@ -173,7 +173,9 @@ export class ColumnValuesService {
         return '';
       }
     } else if (v.text) {
-      return v.text;
+     const codeAndText = v.code + ' | ' + v.text;
+     return codeAndText; 
+      // return v.text;
     }
 
     return coding && coding[0]
@@ -191,9 +193,7 @@ export class ColumnValuesService {
    */
   getCodingAsText(v: Coding, { fullPath }: Context): string {
     if (v.display) {
-     // return v.display;
-     const codeAndText = v.code + ' | ' + v.display;
-     return codeAndText; 
+      return v.display;
     }
 
     const valueSet =
