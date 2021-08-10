@@ -173,9 +173,7 @@ export class ColumnValuesService {
         return '';
       }
     } else if (v.text) {
-     const codeAndText = v.code + ' | ' + v.text;
-     return codeAndText; 
-      // return v.text;
+       return v.text;
     }
 
     return coding && coding[0]
