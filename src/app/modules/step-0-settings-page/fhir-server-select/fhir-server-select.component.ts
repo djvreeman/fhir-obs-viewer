@@ -38,7 +38,11 @@ export class FhirServerSelectComponent
   options = [
     {
       description: 'SDC Test - Logica Sandbox',
-      url: 'https://lforms-fhir.nlm.nih.gov/baseR4'
+      url: 'https://api.logicahealth.org/SDCTest/open'
+    },
+    {
+      description: 'LOINC2HPO - Logica Sandbox',
+      url: 'https://api.logicahealth.org/loinc2hpo/open'
     },
     {
       description: 'FHIR Tools project FHIR server (fake data)',
