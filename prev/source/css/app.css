@@ -231,7 +231,7 @@ h2 {
 }
 
 input {
-  font-family: inherit;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: inherit;
   line-height: normal;
   border-radius: 7px;
@@ -602,7 +602,7 @@ table.section__body {
 }
 
 .search-parameter-list_combined > .search-parameter-list__combiner > label {
-  font-family: inherit;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: inherit;
   line-height: normal;
   border-radius: 7px;
@@ -715,6 +715,7 @@ body {
   margin-left: 20px;
   /* border-right: 1px solid #5cb85c; */
   padding-right: 0.75em;
+  padding-top: 0.8em;
 }
 #logo,
 #log img {
