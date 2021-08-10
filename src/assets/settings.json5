@@ -31,7 +31,7 @@
         "Observation": [
           {
             displayName: "Obs Code",
-            element: "code",
+            element: "Obs Code",
             expression: "Observation.code.coding.code",
             types: [
               "string"
