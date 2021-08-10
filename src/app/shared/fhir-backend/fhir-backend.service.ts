@@ -267,7 +267,8 @@ export class FhirBackendService implements HttpBackend {
           typeof valueSets[entityName] === 'string'
             ? valueSets[entityName]
             : valueSets[entityName].reduce((entityMap, item) => {
-                entityMap[item.code] = item.display;
+                // entityMap[item.code] = item.display;
+                entityMap[item.code] = item.code + ' | ' + item.display;
                 return entityMap;
               }, {});
         return valueSetsMap;
