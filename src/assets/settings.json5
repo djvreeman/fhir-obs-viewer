@@ -36,6 +36,14 @@
             types: [
               "string"
             ]
+          },
+          {
+            displayName: "Obs Code System",
+            element: "Obs Code System",
+            expression: "Observation.code.coding.system",
+            types: [
+              "string"
+            ]
           }
         ],
         "Condition": [
@@ -46,8 +54,16 @@
             types: [
               "string"
             ]
+          },
+          {
+            displayName: "Condition Code System",
+            element: "Condition Code System",
+            expression: "Condition.code.coding.system",
+            types: [
+              "string"
+            ]
           }
-        ],
+        ]
       }
     }
   },
