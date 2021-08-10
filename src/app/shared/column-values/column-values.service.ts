@@ -191,7 +191,9 @@ export class ColumnValuesService {
    */
   getCodingAsText(v: Coding, { fullPath }: Context): string {
     if (v.display) {
-      return v.display;
+     // return v.display;
+     const codeAndText = v.code + ' | ' + v.display;
+     return codeAndText; 
     }
 
     const valueSet =
