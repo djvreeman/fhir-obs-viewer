@@ -45,6 +45,10 @@ export class FhirServerSelectComponent
       url: 'https://api.logicahealth.org/loinc2hpo/open'
     },
     {
+      description: 'UHN HAPI Test Server',
+      url: 'https://hapi.fhir.org/baseR4'
+    },
+    {
       description: 'FHIR Tools project FHIR server (fake data)',
       url: 'https://lforms-fhir.nlm.nih.gov/baseR4'
     },
