@@ -32,7 +32,7 @@
           {
             displayName: "Obs Code",
             element: "code",
-            expression: "Observation.code",
+            expression: "Observation.code.coding.code",
             types: [
               "string"
             ]
