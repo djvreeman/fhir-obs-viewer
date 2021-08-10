@@ -699,8 +699,7 @@ body {
   border-top: 2px solid #458AC5;
   border-bottom: 7px solid #4cae4c;
   line-height: normal;
-  padding-bottom: 22px;
-  height: 70px;
+  padding-bottom: 0.5em;
 }
 #logo {
   position: relative;
@@ -743,14 +742,14 @@ body {
   margin-top: 2.2em;
 }
 #siteName {
-  font-size: 300%;
+  font-size: 3em;
   color: white;
+  margin-top: 0.4em;
 }
 #version {
     float: right;
     padding-right: 1em;
-    font-weight: bold;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 /* End of styles for the header */
 
