@@ -28,6 +28,16 @@
             ]
           }
         ],
+        "Observation": [
+          {
+            displayName: "Obs Code",
+            element: "code",
+            expression: "Observation.code",
+            types: [
+              "string"
+            ]
+          }
+        ],
       }
     }
   },
