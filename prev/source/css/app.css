@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   /* jQuery's offset() is confused when the position is set to relative (by
@@ -694,7 +694,7 @@ body {
   position: relative;
   background-color: #202020;
   font-size: .8em;
-  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: #E8F2FC;
   border-top: 2px solid #458AC5;
   border-bottom: 7px solid #4cae4c;
