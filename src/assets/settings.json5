@@ -38,6 +38,16 @@
             ]
           }
         ],
+        "Condition": [
+          {
+            displayName: "Condition Code",
+            element: "Condition Code",
+            expression: "Condition.code.coding.code",
+            types: [
+              "string"
+            ]
+          }
+        ],
       }
     }
   },
