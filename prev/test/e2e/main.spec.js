@@ -5,7 +5,7 @@ const Key = protractor.Key;
 const EC = protractor.ExpectedConditions;
 const fs = require('fs');
 
-describe('Research Data Finder', function () {
+describe('Research Data Explorer', function () {
   beforeAll(function () {
     setAngularSite(false);
     browser.get('/');
