@@ -30,7 +30,8 @@ export class SettingsService {
       .get('assets/settings.json5', {
         responseType: 'text',
         headers: new HttpHeaders({
-          'Cache-Control': 'no-store, max-age=0'
+          'Cache-Control': 'no-store, max-age=0',
+          'Accept': 'application/fhir+json'
         })
       })
       .pipe(
