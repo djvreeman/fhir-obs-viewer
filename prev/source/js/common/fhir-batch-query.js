@@ -385,7 +385,6 @@ export class FhirBatchQuery {
     combine = true,
     retryCount = false,
     contentType = 'application/fhir+json',
-    accept = 'application/fhir+json',
     }
     logPrefix = ''
   }) {
@@ -433,7 +432,6 @@ export class FhirBatchQuery {
               combine,
               retryCount,
               contentType,
-              accept,
               logPrefix,
               resolve,
               reject
@@ -468,6 +466,7 @@ export class FhirBatchQuery {
 
       if (method === 'GET') {
         sendUrl = this.addParamToUrl(sendUrl, '_type', 'json');
+        oReq.setRequestHeader('Accept', 'application/fhir+json');
       }
 
       oReq.open(method, sendUrl);
