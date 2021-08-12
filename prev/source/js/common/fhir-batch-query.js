@@ -385,6 +385,8 @@ export class FhirBatchQuery {
     combine = true,
     retryCount = false,
     contentType = 'application/fhir+json',
+    accept = 'application/fhir+json',
+    }
     logPrefix = ''
   }) {
     // Update last request time on request
@@ -431,6 +433,7 @@ export class FhirBatchQuery {
               combine,
               retryCount,
               contentType,
+              accept,
               logPrefix,
               resolve,
               reject
