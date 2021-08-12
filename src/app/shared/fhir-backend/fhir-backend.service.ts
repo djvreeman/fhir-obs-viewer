@@ -187,7 +187,10 @@ export class FhirBackendService implements HttpBackend {
     }
 
     const fullUrl = newRequest.urlWithParams;
-
+    const headerDict = {
+      'Content-Type': 'application/fhir+json',
+      'Accept': 'application/fhir+json',
+    }
     // Otherwise, use the FhirBatchQuery from the old version of
     // Research Data Finder to handle the HTTP request.
     return new Observable<HttpResponse<any>>(
@@ -209,6 +212,7 @@ export class FhirBackendService implements HttpBackend {
               observer.next(
                 new HttpResponse<any>({
                   status,
+                  headers: new HttpHeaders(this.headerDict),
                   body: data,
                   url: fullUrl
                 })
