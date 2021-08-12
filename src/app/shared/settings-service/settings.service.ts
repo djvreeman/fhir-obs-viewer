@@ -25,14 +25,18 @@ export class SettingsService {
   /**
    * Loads settings from JSON file.
    */
+
+  const headerDict = {
+    'Cache-Control': 'no-store, max-age=0',
+    'Content-Type': 'application/fhir+json',
+    'Accept': 'application/fhir+json',
+  }
+
   loadJsonConfig(): Observable<any> {
     return this.http
       .get('assets/settings.json5', {
         responseType: 'text',
-        headers: new HttpHeaders({
-          'Cache-Control': 'no-store, max-age=0'},{
-          'Accept': 'application/fhir+json'
-        })
+        headers: new HttpHeaders(headersDict),
       })
       .pipe(
         tap((config) => {
