@@ -26,7 +26,7 @@ export class SettingsService {
    * Loads settings from JSON file.
    */
 
-  const headerDict = {
+  private headerDict = {
     'Cache-Control': 'no-store, max-age=0',
     'Content-Type': 'application/fhir+json',
     'Accept': 'application/fhir+json',
@@ -36,7 +36,7 @@ export class SettingsService {
     return this.http
       .get('assets/settings.json5', {
         responseType: 'text',
-        headers: new HttpHeaders(headersDict),
+        headers: new HttpHeaders(this.headerDict),
       })
       .pipe(
         tap((config) => {
