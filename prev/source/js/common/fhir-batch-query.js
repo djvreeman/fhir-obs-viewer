@@ -385,7 +385,6 @@ export class FhirBatchQuery {
     combine = true,
     retryCount = false,
     contentType = 'application/fhir+json',
-    }
     logPrefix = ''
   }) {
     // Update last request time on request
@@ -466,7 +465,6 @@ export class FhirBatchQuery {
 
       if (method === 'GET') {
         sendUrl = this.addParamToUrl(sendUrl, '_type', 'json');
-        oReq.setRequestHeader('Accept', 'application/fhir+json');
       }
 
       oReq.open(method, sendUrl);
@@ -475,7 +473,8 @@ export class FhirBatchQuery {
       if (method !== 'GET') {
         oReq.setRequestHeader('Content-Type', contentType);
       }
-
+    // Try for Cerner
+      oReq.setRequestHeader('Accept', 'application/fhir+json');
       oReq.send(body);
       this._activeReq.push(oReq);
     });
