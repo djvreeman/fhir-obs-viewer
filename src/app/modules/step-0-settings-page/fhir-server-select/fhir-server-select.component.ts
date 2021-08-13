@@ -49,6 +49,10 @@ export class FhirServerSelectComponent
       url: 'https://hapi.fhir.org/baseR4'
     },
     {
+      description: 'Cerner Open Sandbox',
+      url: 'https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/'
+    },
+    {
       description: 'FHIR Tools project FHIR server (fake data)',
       url: 'https://lforms-fhir.nlm.nih.gov/baseR4'
     },
