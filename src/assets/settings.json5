@@ -44,6 +44,22 @@
             types: [
               "string"
             ]
+          },
+           {
+            displayName: "Obs Component Code",
+            element: "Obs Component Code",
+            expression: "Observation.component.code.coding.code",
+            types: [
+              "string"
+            ]
+          },
+           {
+            displayName: "Obs Component Value",
+            element: "Obs Component Value",
+            expression: "Observation.component.value",
+            types: [
+              "string"
+            ]
           }
         ],
         "Condition": [
